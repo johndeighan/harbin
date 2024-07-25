@@ -6,8 +6,8 @@
     "gulpfile.coffee"
   ],
   "names": [],
-  "mappings": "AAAA,OAAA;EAAQ,GAAR;EAAa,IAAb;CAAA,MAAA;;AAEA,OAAA,IAAO,KAAA,GAAQ,CAAC,EAAD,CAAA,GAAA;EACd,OAAO,CAAC,GAAR,CAAY,aAAZ;SACA,EAAA,CAAA;AAFc;;AAIf,OAAA,IAAO,KAAA,GAAQ,CAAC,EAAD,CAAA,GAAA;EACd,GAAA,CAAI,gBAAJ,CACA,CAAC,IADD,CACM,IAAA,CAAK,MAAL,CADN;SAEA,EAAA,CAAA;AAHc",
+  "mappings": "AAAA,OAAA;EAAQ,GAAR;EAAa,IAAb;CAAA,MAAA;;AAEA,OAAA,IAAO,KAAA,GAAQ,CAAC,EAAD,CAAA,GAAA;EACd,GAAA,CAAI,gBAAJ,CACA,CAAC,IADD,CACM,IAAA,CAAK,MAAL,CADN;SAEA,EAAA,CAAA;AAHc",
   "sourcesContent": [
-    "import {src, dest} from 'gulp'\r\n\r\nexport hello = (cb) =>\r\n\tconsole.log \"Hello, Gulp\"\r\n\tcb()\r\n\r\nexport build = (cb) =>\r\n\tsrc('src/index.html')\r\n\t.pipe(dest('docs'))\r\n\tcb()\r\n"
+    "import {src, dest} from 'gulp'\r\n\r\nexport build = (cb) =>\r\n\tsrc('src/index.html')\r\n\t.pipe(dest('docs'))\r\n\tcb()\r\n"
   ]
 }
