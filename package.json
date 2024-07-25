@@ -1,0 +1,26 @@
+{
+	"name": "@jdeighan/harbin",
+	"version": "1.0.0",
+	"type": "module",
+	"scripts": {
+		"build:gulp": "coffee -cmb --no-header gulpfile.coffee",
+		"build:coffee": "coffee -cmb --no-header .",
+		"build": "clear && npm run build:coffee && npm run llb",
+		"test": "clear && npm run build && npx ava --timeout=1m ./test/*.test.js && git status"
+	},
+	"keywords": [
+		"gulp",
+		"javascript",
+		"coffeescript"
+	],
+	"author": "John Deighan",
+	"license": "MIT",
+	"description": "Document trip to Harbin, China",
+	"devDependencies": {
+		"coffeescript": "^2.7.0",
+		"gulp": "^5.0.0"
+	},
+	"dependencies": {
+		"@jdeighan/llutils": "^1.0.3"
+	}
+}
