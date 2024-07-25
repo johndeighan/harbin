@@ -1,5 +1,6 @@
 logs/
 node_modules/
+private/
 
 # dotenv environment variables file
 .env
